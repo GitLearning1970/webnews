@@ -1,5 +1,6 @@
 :root {
     --black1: rgb(41, 41, 41);
+    --black2: rgb(61, 61, 61);
     --white1: rgb(216, 216, 216);
 }
 
@@ -47,4 +48,35 @@ header .navbar-header a {
 header .navbar-header a:hover,
 header .navbar-header li.active > a {
     color: var(--white1);
+}
+
+/* ============= MAIN CONTENT ============= */
+main {
+    width: 75vw;
+    margin: 60px auto 0 auto;
+}
+
+/* categories */
+.categories {
+    text-align: center;
+}
+
+.categories li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.categories button {
+    font-size: 12pt;
+    padding: 6px 10px;
+    background: var(--black1);
+    color: whitesmoke;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.categories button:hover,
+.categories li.active > button {
+    background: var(--black2);
 }
