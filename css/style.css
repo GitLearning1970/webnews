@@ -20,11 +20,14 @@ a {
     text-decoration: none;
 }
 
-/* ============= HEADER ============= */
-header {
+header, .categories {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+/* ============= HEADER ============= */
+header {
     background: var(--black1);
     padding: 25px 100px;
 }
@@ -58,25 +61,50 @@ main {
 
 /* categories */
 .categories {
-    text-align: center;
+    align-items: flex-end;
+    width: 55vw;
+    margin: 0 auto;
 }
 
-.categories li {
+.categories-items li {
     display: inline-block;
     margin: 0 4px;
 }
 
-.categories button {
+.categories-items button {
     font-size: 12pt;
     padding: 6px 10px;
     background: var(--black1);
     color: whitesmoke;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: none;
     font-weight: bold;
     cursor: pointer;
+    transition: background .3s ease-in;
 }
-.categories button:hover,
-.categories li.active > button {
+.categories-items button:hover,
+.categories-items li.active > button {
     background: var(--black2);
+}
+
+/* categories dropdown button */
+.dropdown .dropdown-btn {
+    rotate: 90deg;
+    border: none;
+    background: var(--black1);
+    color: whitesmoke;
+    text-transform: uppercase;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14pt;
+    padding: 0 8px 9px 8px;
+    transition: background .3s ease-in;
+}
+.dropdown .dropdown-btn:hover {
+    background: var(--black2);
+}
+
+/* categories dropdown content */
+.dropdown .dropdown-content {
+    display: none;
 }
