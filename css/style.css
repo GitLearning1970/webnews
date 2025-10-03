@@ -80,3 +80,25 @@ main {
 .categories li.active > button {
     background: var(--black2);
 }
+
+/* news */
+.news {
+    margin-top: 65px;
+}
+/* news rows */
+.news .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 10px;
+    margin-bottom: 40px;
+}
+/* news cards */
+.news .card {
+    width: 50%;
+    height: 150px;
+    background: darkred;
+}
+.news .card-w {
+    width: 100%;
+}
