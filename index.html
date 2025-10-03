@@ -27,20 +27,30 @@
 
     <main role="main" id="mainNews"> <!-- main content -->
         <div class="categories"> <!-- categories -->
-            <ul> <!-- categories items -->
+            <ul class="categories-items"> <!-- categories items -->
                 <li><button type="button">Technology</button></li>
                 <li><button type="button">Games</button></li>
                 <li><button type="button">Entertainment</button></li>
                 <li><button type="button">Sports</button></li>
                 <li><button type="button">Cience</button></li>
                 <li><button type="button">Home & Life</button></li>
-                <li><button type="button">Business</button></li>
-                <li><button type="button">Arts</button></li>
-                <li><button type="button">Motorsport</button></li>
             </ul> <!-- categories items /end -->
+
+            <div class="dropdown"> <!-- dropdown button -->
+                <button type="button" id="dropdownBtn">...</button>
+                <ul id="dropdownCont"> <!-- dropdown list -->
+                    <li class="drop-f-item">Business</li>
+                    <li>Arts</li>
+                    <li>Motorsport</li>
+                    <li>Health</li>
+                    <li>Life Style</li>
+                    <li class="drop-l-item">Food</li>
+                </ul> <!-- dropdown list /end -->
+            </div> <!-- dropdown button /end -->
         </div> <!-- categories /end -->
     </main> <!-- main content /end -->
 
     <script src="./js/indexCards.js" type="module"></script>
+    <script src="./js/dropown-categories.js"></script>
 </body>
 </html>

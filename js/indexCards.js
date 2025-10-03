@@ -22,7 +22,7 @@ const generateNews = function() {
         const cardsAmount = rand(3, 5)
         for (let j = 0; j < cardsAmount; j++) {
             // create cards
-            card[j] = document.createElement('div')
+            card[j] = document.createElement('a')
             card[j].classList.add('card')
 
             cardNum++
