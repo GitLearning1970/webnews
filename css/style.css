@@ -20,13 +20,17 @@ a {
     text-decoration: none;
 }
 
-/* ============= HEADER ============= */
-header {
+header, .navbar-header,
+.modal-body .modal-links {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+/* ============= HEADER ============= */
+header {
     background: var(--black1);
-    padding: 25px 100px;
+    padding: 25px 10vw;
 }
 
 /* logo */
@@ -50,6 +54,114 @@ header .navbar-header li.active > a {
     color: var(--white1);
 }
 
+/* login button */
+#loginBtn {
+    margin-left: 35px;
+    font-size: 12.5pt;
+    padding: 6px 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+#loginBtn:hover {
+    background: var(--white1);
+}
+
+/* login background */
+.modal {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.411);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+}
+/* login screen */
+.modal-content {
+    position: relative;
+    background: whitesmoke;
+    width: 25vw;
+    margin: 150px auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 8px rgba(0, 0, 0, 0.37);
+}
+/* modal header */
+.modal-header {
+    background: var(--black1);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* modal title */
+.modal-header .modal-title {
+    font-size: 25pt;
+    text-align: center;
+    padding: 10px 0;
+}
+/* modal close button */
+.modal-header .close {
+    float: right;
+    font-size: 18pt;
+    background: rgb(187, 52, 52);
+    padding: 0 8px;
+    cursor: pointer;
+    margin: 6px 6px 0 0;
+    border-radius: 4px;
+}
+.modal-header .close:hover {
+    background: rgb(216, 38, 38);
+}
+.modal-body {
+    padding: 20px 50px 0 50px;
+}
+/* email and passwords */
+.modal-body .usr-data {
+    margin-bottom: 20px;
+}
+.modal-body label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modal-body input {
+    width: 100%;
+    font-size: 13.5pt;
+    padding: 4px 0;
+    text-indent: 3px;
+    border-radius: 3px;
+    border: 1px solid rgb(167, 167, 167);
+}
+.modal-body input:focus {
+    outline: none;
+}
+/* login links */
+.modal-body .modal-links {
+    padding-bottom: 10px;
+}
+/* Sign in button */
+.modal-body .modal-links button {
+    font-size: 12pt;
+    border: none;
+    background: var(--black1);
+    padding: 6px 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+.modal-body .modal-links button:hover {
+    background: var(--black2);
+}
+/* create acconut link */
+.modal-body .modal-links a {
+    color: rgb(0, 94, 148);
+}
+.modal-body .modal-links a:hover {
+    text-decoration: underline;
+}
 /* ============= MAIN CONTENT ============= */
 main {
     width: 75vw;

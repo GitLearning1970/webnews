@@ -22,8 +22,34 @@
                 <li><a href="./top-news">Top News</a></li> <!-- top news -->
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
+            <button type="button" id="loginBtn">Login</button>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
+
+    <div class="modal"> <!-- login background -->
+        <div class="modal-content"> <!-- login screen -->
+            <div class="modal-header"> <!-- login header -->
+                <span class="close">&times;</span>
+                <h2 class="modal-title">LOGIN</h2>
+            </div> <!-- login header /end -->
+            <div class="modal-body"> <!-- login form -->
+                <form action="" method="post">
+                    <div class="usr-data"> <!-- login email -->
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" name="loginEmail" id="loginEmail">
+                    </div> <!-- login email /end -->
+                    <div class="usr-data"> <!-- login password -->
+                        <label for="loginPaswd">Password:</label>
+                        <input type="password" name="loginPaswd" id="loginPaswd">
+                    </div> <!-- login password -->
+                    <div class="modal-links">
+                        <a href="./register.html">Create account</a>
+                        <button type="button">Sign in</button>
+                    </div>
+                </form>
+            </div> <!-- login form /end -->
+        </div> <!-- login screen /end -->
+    </div> <!-- login background /end -->
 
     <main role="main"> <!-- main content -->
         <div class="categories"> <!-- categories -->
