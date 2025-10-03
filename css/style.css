@@ -71,8 +71,8 @@ header .navbar-header li.active > a {
 }
 
 /* login background */
-.modal {
-    display: block;
+#loginModal {
+    display: none;
     position: fixed;
     background: rgba(0, 0, 0, 0.411);
     width: 100%; height: 100%;
@@ -101,7 +101,7 @@ header .navbar-header li.active > a {
     padding: 10px 0;
 }
 /* modal close button */
-.modal-header .close {
+#closeModal {
     float: right;
     font-size: 18pt;
     background: rgb(187, 52, 52);
@@ -110,7 +110,7 @@ header .navbar-header li.active > a {
     margin: 6px 6px 0 0;
     border-radius: 4px;
 }
-.modal-header .close:hover {
+#closeModal:hover {
     background: rgb(216, 38, 38);
 }
 .modal-body {
