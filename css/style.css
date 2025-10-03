@@ -86,7 +86,21 @@ header .navbar-header li.active > a {
     margin: 150px auto 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px 8px rgba(0, 0, 0, 0.37);
+    animation-name: loginAnim;
+    animation-duration: .4s;
 }
+/* login screen animation */
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 /* modal header */
 .modal-header {
     background: var(--black1);
