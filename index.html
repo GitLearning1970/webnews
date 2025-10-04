@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header> <!-- header -->
+    <header class="wn-dflex"> <!-- header -->
         <div class="logo"> <!-- logo -->
             <h1><a href="./index.html">WebNews</a></h1>
         </div> <!-- logo /end -->
 
-        <nav class="navbar-header"> <!-- navigation bar -->
+        <nav class="navbar-header wn-dflex"> <!-- navigation bar -->
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
                 <li><a href="./mostImportant.html">Most Important</a></li> <!-- main news -->
@@ -22,7 +22,7 @@
                 <li><a href="./top-news">Top News</a></li> <!-- top news -->
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
-            <button type="button" id="loginBtn">Login</button>
+            <button type="button" id="loginBtn" class="wn-button">Login</button>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
 
@@ -42,9 +42,9 @@
                         <label for="loginPaswd">Password:</label>
                         <input type="password" name="loginPaswd" id="loginPaswd">
                     </div> <!-- login password -->
-                    <div class="modal-links">
+                    <div class="modal-links wn-dflex">
                         <a href="./register.html">Create account</a>
-                        <button type="button">Sign in</button>
+                        <button type="button" class="wn-button">Sign in</button>
                     </div>
                 </form>
             </div> <!-- login form /end -->
@@ -52,18 +52,18 @@
     </div> <!-- login background /end -->
 
     <main role="main" id="mainNews"> <!-- main content -->
-        <div class="categories"> <!-- categories -->
+        <div class="categories wn-dflex"> <!-- categories -->
             <ul class="categories-items"> <!-- categories items -->
-                <li><button type="button">Technology</button></li>
-                <li><button type="button">Games</button></li>
-                <li><button type="button">Entertainment</button></li>
-                <li><button type="button">Sports</button></li>
-                <li><button type="button">Cience</button></li>
-                <li><button type="button">Home & Life</button></li>
+                <li><button type="button" class="wn-button">Technology</button></li>
+                <li><button type="button" class="wn-button">Games</button></li>
+                <li><button type="button" class="wn-button">Entertainment</button></li>
+                <li><button type="button" class="wn-button">Sports</button></li>
+                <li><button type="button" class="wn-button">Cience</button></li>
+                <li><button type="button" class="wn-button">Home & Life</button></li>
             </ul> <!-- categories items /end -->
 
             <div class="dropdown"> <!-- dropdown button -->
-                <button type="button" id="dropdownBtn">...</button>
+                <button type="button" id="dropdownBtn" class="wn-button">...</button>
                 <ul id="dropdownCont"> <!-- dropdown list -->
                     <li class="drop-f-item">Business</li>
                     <li>Arts</li>

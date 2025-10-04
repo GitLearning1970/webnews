@@ -18,6 +18,7 @@ const generateNews = function() {
         // generate news
         row[i] = document.createElement('div')
         row[i].classList.add('row')
+        row[i].classList.add('wn-dflex')
         // amount of cards
         const cardsAmount = rand(3, 5)
         for (let j = 0; j < cardsAmount; j++) {
@@ -37,6 +38,7 @@ const generateNews = function() {
             // create card footers
             cardFooter[j] = document.createElement('div')
             cardFooter[j].classList.add('card-footer')
+            cardFooter[j].classList.add('wn-dflex')
             cardFooter[j].innerHTML = '<p class="card-footer-category">category</p>'
             cardFooter[j].innerHTML += '<p class="card-footer-date">DD / MM / AAAA</p>'
             // put image, body and footer in the card

@@ -1,7 +1,14 @@
 :root {
-    --black1: rgb(41, 41, 41);
-    --black2: rgb(61, 61, 61);
-    --white1: rgb(216, 216, 216);
+    /* color palette */
+    --yellow: #f1e8b4;
+    --green: #626e3b;
+    --greenHover: #54612a;
+    --orange: #d7bf5e;
+    --red: #d16344;
+    --purple: #83555e;
+    --purpleHover: #744b53;
+    /* other colors */
+    --black1: rgb(39, 39, 39);
 }
 
 * {
@@ -10,7 +17,7 @@
 }
 
 body {
-    background: whitesmoke;
+    background: var(--yellow);
     font-size: 12pt;
     font-family: arial, sans-serif;
 }
@@ -19,25 +26,40 @@ body {
 a {
     text-decoration: none;
 }
+a:focus {
+    outline: none;
+}
 
-header, .row,
-.card-footer, .categories,
-.navbar-header,
-.modal-links {
+/* flexbox */
+.wn-dflex {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
+/* buttons */
+.wn-button {
+    padding: 6px 12px;
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+.wn-button:focus {
+    outline: none;
+}
+
 /* ============= HEADER ============= */
 header {
-    background: var(--black1);
     padding: 25px 10vw;
 }
 
 /* logo */
 .logo a {
-    color: whitesmoke;
+    color: var(--black1);
     font-size: 20pt;
 }
 
@@ -48,29 +70,27 @@ header {
 }
 
 .navbar-header a {
-    color: whitesmoke;
+    color: var(--black1);
     font-weight: bold;
 }
 .navbar-header a:hover,
+.navbar-header a:focus,
 .navbar-header li.active > a {
-    color: var(--white1);
+    color: var(--green);
 }
 
 /* login button */
 #loginBtn {
     margin-left: 35px;
     font-size: 12.5pt;
-    padding: 6px 12px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    background: whitesmoke;
-    cursor: pointer;
-    transition: background .3s ease-in-out;
+    background: var(--purple);
 }
-#loginBtn:hover {
-    background: var(--white1);
+#loginBtn:hover,
+#loginBtn:focus {
+    background: var(--purpleHover);
 }
+
+/* ============= LOGIN MODAL ============= */
 
 /* login background */
 #loginModal {
@@ -105,7 +125,7 @@ header {
 
 /* modal header */
 .modal-header {
-    background: var(--black1);
+    background: var(--purple);
     color: whitesmoke;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -126,7 +146,8 @@ header {
     margin: 6px 6px 0 0;
     border-radius: 4px;
 }
-#closeModal:hover {
+#closeModal:hover,
+#closeModal:focus {
     background: rgb(216, 38, 38);
 }
 .modal-body {
@@ -153,31 +174,25 @@ header {
     outline: none;
 }
 /* login links */
-.modal-body .modal-links {
+.modal-links {
     padding-bottom: 10px;
 }
 /* Sign in button */
-.modal-body .modal-links button {
-    font-size: 12pt;
-    border: none;
-    background: var(--black1);
-    padding: 6px 10px;
-    color: whitesmoke;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background .3s ease-in-out;
+.modal-links button {
+    background: var(--purple);
 }
-.modal-body .modal-links button:hover {
-    background: var(--black2);
+.modal-links button:hover {
+    background: var(--purpleHover);
 }
 /* create acconut link */
-.modal-body .modal-links a {
-    color: rgb(0, 94, 148);
+.modal-links a {
+    color: rgb(49, 49, 212);
 }
-.modal-body .modal-links a:hover {
+.modal-links a:hover,
+.modal-links a:focus {
     text-decoration: underline;
 }
+
 /* ============= MAIN CONTENT ============= */
 main {
     width: 75vw;
@@ -197,19 +212,12 @@ main {
 }
 
 .categories-items button {
-    font-size: 12pt;
-    padding: 6px 10px;
-    background: var(--black1);
-    color: whitesmoke;
-    border-radius: 4px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background .3s ease-in;
+    background: var(--green);
 }
+.categories-items li.active > button,
 .categories-items button:hover,
-.categories-items li.active > button {
-    background: var(--black2);
+.categories-items button:focus {
+    background: var(--greenHover);
 }
 
 /* categories dropdown content */
@@ -221,24 +229,21 @@ main {
 /* categories dropdown button */
 #dropdownBtn {
     rotate: 90deg;
-    border: none;
-    background: var(--black1);
-    color: whitesmoke;
-    text-transform: uppercase;
+    background: var(--green);
     border-radius: 50%;
-    cursor: pointer;
     font-size: 14pt;
     padding: 0 8px 9px 8px;
-    transition: background .3s ease-in;
 }
-#dropdownBtn:hover {
-    background: var(--black2);
+#dropdownBtn:hover,
+#dropdownBtn:focus {
+    background: var(--greenHover);
 }
 
 #dropdownCont {
     display: none;
     position: absolute;
     background: whitesmoke;
+    z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.247);
     border-radius: 8px;
     color: var(--black1);
@@ -248,8 +253,11 @@ main {
     padding: 8px 25px 8px 10px;
     cursor: pointer;
 }
-#dropdownCont li:hover {
-    background: rgba(128, 128, 128, 0.26);
+#dropdownCont li.active,
+#dropdownCont li:hover,
+#dropdownCont li:focus {
+    background: rgb(224, 224, 224);
+    outline: none;
 }
 /* first and last option in the dropdown list */
 #dropdownCont .drop-f-item {
@@ -297,7 +305,7 @@ main {
 .card-footer {
     color: var(--black2);
     padding: 0 4px;
-    color: rgb(100, 100, 100);
+    color: #665a2a;
 }
 .card-footer-category {
     font-size: 10pt;
