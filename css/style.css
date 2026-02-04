@@ -23,6 +23,17 @@ body {
 /* all links */
 a { text-decoration: none; }
 
+/* all buttons */
+.btn {
+    font-weight: bold;
+    font-size: 13pt;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+
 /* ===================== HEADER ===================== */
 .header {
     padding: 20px 10vw;
@@ -44,3 +55,22 @@ a { text-decoration: none; }
     color: #e4e4e4;
     outline: none;
 }
+
+/* ===================== INDEX page ===================== */
+main {
+    width: 75vw;
+    margin: 80px auto 0 auto;
+}
+
+/* labels */
+.labels {
+    justify-content: center;
+    column-gap: 10px;
+}
+.labels li { display: inline-block; }
+.labels button {
+    background: var(--pink);
+    color: var(--white);
+    letter-spacing: 1px;
+}
+.labels button:hover { background: #a55d67; }
