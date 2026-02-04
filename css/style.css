@@ -56,6 +56,18 @@ a { text-decoration: none; }
     outline: none;
 }
 
+/* login button */
+.navbar-header .btn {
+    background: var(--white);
+    margin-left: 40px;
+    color: var(--blueGreen2);
+}
+.navbar-header .btn:hover,
+.navbar-header .btn:focus {
+    background: #e4e4e4;
+    outline: none;
+}
+
 /* ===================== INDEX page ===================== */
 main {
     width: 75vw;
