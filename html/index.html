@@ -25,21 +25,30 @@
     </header> <!-- header /end -->
 
     <main role="main">
-        <ul class="labels d-flex"> <!-- labels -->
-            <li><button type="button" class="btn">Technology</button></li>
-            <li><button type="button" class="btn">Games</button></li>
-            <li><button type="button" class="btn">Entertainment</button></li>
-            <li><button type="button" class="btn">Sports</button></li>
-            <li><button type="button" class="btn">Home & Life</button></li>
-            <li><button type="button" class="btn">Business</button></li>
-            <li><button type="button" class="btn">Arts</button></li>
-            <li><button type="button" class="btn">Motorsport</button></li>
-            <li><button type="button" class="btn">Life Style</button></li>
-            <li><button type="button" class="btn">Health</button></li>
-            <li><button type="button" class="btn">Food</button></li>
-        </ul> <!-- labels /end -->
+        <div class="labels d-flex"> <!-- labels -->
+            <ul class="labels-opts"> <!-- label options -->
+                <li><button type="button" class="btn">Technology</button></li>
+                <li><button type="button" class="btn">Games</button></li>
+                <li><button type="button" class="btn">Entertainment</button></li>
+                <li><button type="button" class="btn">Sports</button></li>
+                <li><button type="button" class="btn">Home & Life</button></li>
+                <li><button type="button" class="btn">Business</button></li>
+                <li><button type="button" class="btn">Arts</button></li>
+            </ul> <!-- labels options /end -->
+
+            <div class="dropdown"> <!-- dropdown -->
+                <button type="button" class="dropdown-btn btn">...</button>
+                <ul class="dropdown-cont" style="display: none;"> <!-- dropdown options -->
+                    <li class="drop-f">Motorsport</li>
+                    <li>Life Style</li>
+                    <li>Health</li>
+                    <li class="drop-l">Food</li>
+                </ul> <!-- dropdown options /end -->
+            </div> <!-- dropdown /end -->
+        </div> <!-- labels /end -->
     </main>
 
+    <script src="../js/dropdown.js"></script>
     <script src="../js/index-cards.js" type="module"></script>
 </body>
 </html>
