@@ -14,15 +14,40 @@
             <h1><a href="../html/index.html">WebNews</a></h1>
         </div> <!-- logo /end -->
 
-        <nav class="navbar-header"> <!-- navigation bar -->
+        <nav class="navbar-header d-flex"> <!-- navigation bar -->
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./most-important">Most Important</a></li>
-                <li><a href="./top-news.html">Relevant</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./most-important">Most Important</a></li> <!-- main news -->
+                <li><a href="./top-news.html">Relevant</a></li> <!-- major news -->
+                <li><a href="./contact.html">Contact</a></li> <!-- top news -->
             </ul>
+
+            <button type="button" class="btn">Login</button>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
+
+    <dialog class="loginmodal"> <!-- login screen -->
+        <div class="loginmodal-header"> <!-- header -->
+            <span class="modal-close">&times;</span>
+            <h2 class="loginmodal-title">LOGIN</h2>
+        </div> <!-- header /end -->
+        <div class="loginmodal-body">
+            <form method="post"> <!-- form -->
+                <div class="userdata"> <!-- email -->
+                    <label for="loginEmail">E-mail:</label>
+                    <input type="email" name="loginEmail" id="loginEmail">
+                </div> <!-- email /end -->
+                <div class="userdata"> <!-- password -->
+                    <label for="loginPass">Password:</label>
+                    <input type="password" name="loginPass" id="loginPass" minlength="8">
+                </div> <!-- password /end -->
+            </form> <!-- form /end -->
+            <div class="loginmodal-links d-flex"> <!-- links -->
+                <a href="./register.html">Create an account</a>
+                <button type="button" class="btn openlogin">Sign In</button>
+            </div> <!-- links /end -->
+        </div>
+    </dialog> <!-- login screen /end -->
 
     <main role="main">
         <div class="labels d-flex"> <!-- labels -->
@@ -48,6 +73,7 @@
         </div> <!-- labels /end -->
     </main>
 
+    <script src="../js/login.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/index-cards.js" type="module"></script>
 </body>
