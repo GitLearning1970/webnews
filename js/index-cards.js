@@ -1,13 +1,13 @@
 import rand from "./randomint.js"
+import genCard from "./generate-cards.js"
 
 const main = document.querySelector('main')
 
-function mainFunction() {
+function generateNews() {
     const news = document.createElement('div')
     news.classList.add('news')
 
     const row = []
-    const card = []
 
     // defining amount of rows
     const rowsAmount = 8
@@ -19,16 +19,13 @@ function mainFunction() {
         
         // defining amount of cards (random -> from 3 to 5)
         const cardsAmount = rand(3, 5)
+        // generate cards
+        const card = genCard(cardsAmount)
 
-        for (let j = 0; j < cardsAmount; j++) {
-            // create cards
-            card[j] = document.createElement('article')
-            card[j].classList.add('card')
+        // append cards to each row
+        card.forEach(cd => row[i].appendChild(cd))
 
-            // append cards in the rows
-            row[i].appendChild(card[j])
-        }
-
+        // increse width of the "chosen" cards
         switch (cardsAmount) {
             case 3: { // if cardsAmount == 3
                 let cardIndex, num
@@ -55,4 +52,4 @@ function mainFunction() {
     main.appendChild(news)
 }
 
-mainFunction()
+generateNews()
