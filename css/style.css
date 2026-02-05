@@ -74,3 +74,16 @@ main {
     letter-spacing: 1px;
 }
 .labels button:hover { background: #a55d67; }
+
+/* cards */
+.news { margin-top: 50px; }
+.row {
+    margin-bottom: 30px;
+    column-gap: 10px;
+}
+.card {
+    width: 50%; height: 200px;
+    background: var(--blueGreen1);
+    border-radius: 8px;
+}
+.card-w { width: 100%; }
