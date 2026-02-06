@@ -4,10 +4,7 @@
     align-items: flex-start;
 }
 
-.news-content {
-    border: 1px solid red;
-    width: 70%;
-}
+.news-content { width: 70%; }
 
 .news-header {
     margin-bottom: 20px;
@@ -26,9 +23,7 @@
 }
 
 /* news info */
-.newsinfo {
-    font-size: 13pt;
-}
+.newsinfo { font-size: 13pt; }
 .newsinfo span { font-weight: bold; }
 .newsinfo-name { margin-bottom: 2px; }
 .newsinfo-time span { font-size: 11pt; }
