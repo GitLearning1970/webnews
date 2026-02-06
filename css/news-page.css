@@ -4,7 +4,34 @@
     align-items: flex-start;
 }
 
-.news-content { width: 70%; }
+.news-content {
+    border: 1px solid red;
+    width: 70%;
+}
+
+.news-header {
+    margin-bottom: 20px;
+    color: rgb(29, 29, 29);
+}
+
+/* headline */
+.headline { margin-bottom: 18px; }
+.headline-title {
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+.headline-subtitle {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+/* news info */
+.newsinfo {
+    font-size: 13pt;
+}
+.newsinfo span { font-weight: bold; }
+.newsinfo-name { margin-bottom: 2px; }
+.newsinfo-time span { font-size: 11pt; }
 
 /* news image */
 .news-fig {
