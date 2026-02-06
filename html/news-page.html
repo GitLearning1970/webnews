@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebNews | News</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/news-page.css">
+</head>
+<body>
+    <header class="header d-flex"> <!-- header -->
+        <div class="logo"> <!-- logo -->
+            <h1><a href="../html/index.html">WebNews</a></h1>
+        </div> <!-- logo /end -->
+
+        <nav class="navbar-header d-flex"> <!-- navigation bar -->
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./most-important">Most Important</a></li> <!-- main news -->
+                <li><a href="./top-news.html">Relevant</a></li> <!-- major news -->
+                <li><a href="./contact.html">Contact</a></li> <!-- top news -->
+            </ul>
+
+            <button type="button" class="btn">Login</button>
+        </nav> <!-- navigation bar /end -->
+    </header> <!-- header /end -->
+
+    <dialog class="loginmodal"> <!-- login screen -->
+        <div class="loginmodal-header"> <!-- header -->
+            <span class="modal-close">&times;</span>
+            <h2 class="loginmodal-title">LOGIN</h2>
+        </div> <!-- header /end -->
+        <div class="loginmodal-body">
+            <form method="post"> <!-- form -->
+                <div class="userdata"> <!-- email -->
+                    <label for="loginEmail">E-mail:</label>
+                    <input type="email" name="loginEmail" id="loginEmail">
+                </div> <!-- email /end -->
+                <div class="userdata"> <!-- password -->
+                    <label for="loginPass">Password:</label>
+                    <input type="password" name="loginPass" id="loginPass" minlength="8">
+                </div> <!-- password /end -->
+            </form> <!-- form /end -->
+            <div class="loginmodal-links d-flex"> <!-- links -->
+                <a href="./register.html">Create an account</a>
+                <button type="button" class="btn">Sign In</button>
+            </div> <!-- links /end -->
+        </div>
+    </dialog> <!-- login screen /end -->
+
+    <main role="main" class="mainnews d-flex">
+        <article class="news-content"> <!-- main content -->
+            <figure class="news-fig"> <!-- illustrative image -->
+                <img src="https://picsum.photos/400/" alt="News image">
+                <figcaption>
+                    <p>A little description of the image</p>
+                </figcaption>
+            </figure> <!-- illustrative image /end -->
+
+            <div class="news-text"> <!-- text -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae dolore similique. Tempore maiores veritatis sunt a quae, perspiciatis, cum consectetur sequi maxime, expedita quibusdam optio. Dolor dolorem ratione vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam qui ipsum labore enim sed quae ab obcaecati nobis officiis maxime, tempore impedit at iusto itaque dignissimos. Sunt illum laudantium animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quaerat modi quidem accusamus obcaecati reiciendis accusantium nesciunt? Saepe a ex laborum maxime ab quis, necessitatibus ipsam fugit, similique, incidunt nemo!</p>
+
+                <article class="news-article">
+                    <h2 class="news-subtitle">Subtitle</h2>
+                    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium esse, natus nulla ut minima dolorum? Qui culpa consequuntur quisquam aspernatur perspiciatis, eius dolores explicabo ipsa nihil, voluptate voluptatibus voluptates alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias tempore ad amet quis doloremque, sapiente illo obcaecati asperiores consequatur dolore odio adipisci, aliquam soluta similique recusandae consectetur error unde!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quia ratione est nobis esse, laudantium soluta nulla a eveniet vitae labore perspiciatis consequuntur eos perferendis ex nostrum maiores tempore repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores recusandae, tenetur deleniti maxime, illum alias pariatur dolor, molestias id magnam aliquam at! At necessitatibus, repellendus rem consequuntur cumque recusandae et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nobis modi corporis impedit vel distinctio, error qui dicta asperiores, odit alias. Corrupti odit asperiores nobis dicta porro sit dolor eos!</p>
+                </article>
+
+                <article class="news-article">
+                    <h2 class="news-subtitle">Subtitle</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error hic aliquid sunt consequatur inventore, laudantium facilis nulla doloribus assumenda, ipsam molestias repudiandae rerum nihil, veritatis eligendi iste praesentium. Delectus, fuga? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, accusamus beatae aliquam natus sed dignissimos. Pariatur in itaque consequatur voluptatem nostrum? Voluptatem, odit voluptate dolores perferendis pariatur laboriosam. Rem, et!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis esse laborum, in, expedita eius beatae omnis non enim amet dignissimos vel ab ad dolores sequi quasi. Facere, corporis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa delectus nisi quidem tempore quasi voluptate cumque, architecto magnam inventore facilis explicabo adipisci reiciendis doloremque assumenda, perferendis quod et esse? Autem.</p>
+                </article>
+
+                <article class="news-article">
+                    <h2 class="news-subtitle">Subtitle</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias obcaecati molestias magnam animi dolore repellendus rem ipsam nemo, laborum voluptatem pariatur assumenda temporibus enim saepe inventore a voluptates adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sapiente fugiat quae iusto, voluptatibus culpa aliquid eius voluptates dolor aliquam molestiae consectetur ut animi natus maxime neque error necessitatibus. Veniam!</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni culpa eos dicta quam natus corrupti, doloribus quia doloremque aut itaque neque libero id deserunt nostrum autem ab! Maxime, dolorum voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dolores? Sit consequatur delectus illo tempore natus eius, asperiores consectetur nihil, libero, iure alias. Unde architecto amet consequuntur voluptatibus fugit quia?</p>
+                </article>
+            </div> <!-- text /end -->
+        </article> <!-- main content /end -->
+        
+        <aside class="asidenews"> <!-- aside news -->
+            <h3 class="asidenews-title">More news</h3>
+
+            <div class="asidenews-cards">
+                <article class="card">
+                    <img src="https://picsum.photos/200/?random=1" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-body-title">Title 1</h4>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <span class="card-footer-label">label</span>
+                        <span class="card-footer-date">MM / DD / YYYY</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/200/?random=2" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-body-title">Title 1</h4>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <span class="card-footer-label">label</span>
+                        <span class="card-footer-date">MM / DD / YYYY</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/200/?random=3" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-body-title">Title 1</h4>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <span class="card-footer-label">label</span>
+                        <span class="card-footer-date">MM / DD / YYYY</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/200/?random=4" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-body-title">Title 1</h4>
+                    </div>
+                    <div class="card-footer d-flex">
+                        <span class="card-footer-label">label</span>
+                        <span class="card-footer-date">MM / DD / YYYY</span>
+                    </div>
+                </article>
+            </div>
+        </aside> <!-- aside news /end -->
+    </main>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
