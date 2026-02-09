@@ -35,35 +35,48 @@
             </div>
         </section> <!-- left side /end -->
         <section class="painel-forms"> <!-- right side -->
-            <div class="register middle" style="display: block;"> <!-- register form -->
+            <div class="datascreen middle" style="display: none;"> <!-- register form -->
                 <form method="post">
                     <div class="userdata"> <!-- username -->
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="It may contain letters and numbers.">
+                        <label for="registerUsername">Username:</label>
+                        <input type="text" name="registerUsername" id="registerUsername" placeholder="It may contain letters and numbers.">
                     </div> <!-- username /end -->
                     <div class="userdata"> <!-- email -->
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                        <label for="registerEmail">E-mail:</label>
+                        <input type="email" name="registerEmail" id="registerEmail" placeholder="example@email.com">
                     </div> <!-- email /end -->
                     <div class="passwords d-flex">
                         <div class="userdata"> <!-- password -->
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="passowrd" minlength="8" placeholder="min.: 8 characters">
+                            <label for="registerPass">Password:</label>
+                            <input type="password" name="registerPass" id="registerPass" minlength="8" placeholder="min.: 8 characters">
                         </div> <!-- password /end -->
                         <div class="userdata"> <!-- confirm password -->
-                            <label for="confPass">Confirm password:</label>
-                            <input type="password" name="confPass" id="confPass" placeholder="Repeat password">
+                            <label for="registerConfPass">Confirm password:</label>
+                            <input type="password" name="registerConfPass" id="registerConfPass" placeholder="Repeat password">
                         </div> <!-- confirm passwor /end -->
                     </div>
                 </form>
-                <div class="register-links d-flex"> <!-- register links -->
+                <div class="datascreen-links d-flex"> <!-- register links -->
                     <p class="link">I have an account</p>
                     <button type="button" class="btn">Sign up</button>
                 </div> <!-- register links /end -->
             </div> <!-- register form /end -->
-            <div class="login" style="display: none;">
-                <form method="post"></form>
-            </div>
+            <div class="datascreen middle" style="display: block;"> <!-- login form -->
+                <form method="post">
+                    <div class="userdata"> <!-- email -->
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" name="loginEmail" id="loginEmail">
+                    </div> <!-- email /end -->
+                    <div class="userdata"> <!-- password -->
+                        <label for="loginPass">Password:</label>
+                        <input type="password" name="loginPass" id="loginPass">
+                    </div> <!-- password /end -->
+                </form>
+                <div class="datascreen-links d-flex"> <!-- login links -->
+                    <p class="link">Create account</p>
+                    <button type="button" class="btn">Sign in</button>
+                </div> <!-- login links /end -->
+            </div> <!-- login form /end -->
         </section> <!-- right side /end -->
     </main>
 </body>

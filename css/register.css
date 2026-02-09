@@ -49,29 +49,31 @@
     background: var(--mauve);
 }
 
-/* register screen */
-.register {
+.datascreen-links { margin-top: 20px; }
+
+/* ---------------- screens ---------------- */
+.datascreen {
     background: whitesmoke;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.281);
 }
 
-/* register passwords */
+/* passwords */
 .passwords { column-gap: 12px; }
 .passwords input::placeholder { font-size: 11pt; }
 
 /* open login screen */
-.register-links .link {
+.datascreen-links .link {
     color: rgb(15, 164, 233);
     cursor: pointer;
-    text-underline-offset: 2px;
+    text-underline-offset: 1.5px;
 }
-.register-links .link:hover { text-decoration: underline; }
+.datascreen-links .link:hover { text-decoration: underline; }
 
-/* sign up button */
-.register-links .btn {
+/* sign up and sign in buttons */
+.datascreen-links .btn {
     background: rgb(28, 170, 28);
     color: whitesmoke;
 }
-.register-links .btn:hover { background: rgb(25, 150, 25); }
+.datascreen-links .btn:hover { background: rgb(25, 150, 25); }
