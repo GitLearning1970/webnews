@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.mainregister {
+    height: 100%;
+    align-items: flex-start;
+}
+
+/* =================== LEFT SIDE =================== */
+.painel-img {
+    position: relative;
+    height: 100%; width: 60%;
+    background: #7a9b77;
+}
+
+.register-set {
+    text-align: center;
+    width: 40vw;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, .4);
+}
+
+.register-set h4 {
+    font-size: 14pt;
+    color: var(--white);
+    line-height: 20pt;
+}
+
+.register-set a {
+    margin-top: 20px;
+    display: block;
+    font-size: 13pt;
+    color: rgb(49, 190, 255);
+}
+.register-set a:hover { text-decoration: underline; }
+
+.register-img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =================== RIGHT SIDE =================== */
+.painel-forms {
+    position: relative;
+    height: 100%; width: 40%;
+    background: var(--mauve);
+}
+
+/* register screen */
+.register {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.281);
+}
+
+/* register passwords */
+.passwords { column-gap: 12px; }
+.passwords input::placeholder { font-size: 11pt; }
+
+/* open login screen */
+.register-links .link {
+    color: rgb(15, 164, 233);
+    cursor: pointer;
+    text-underline-offset: 2px;
+}
+.register-links .link:hover { text-decoration: underline; }
+
+/* sign up button */
+.register-links .btn {
+    background: rgb(28, 170, 28);
+    color: whitesmoke;
+}
+.register-links .btn:hover { background: rgb(25, 150, 25); }

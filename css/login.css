@@ -62,26 +62,6 @@
 /* login body */
 .loginmodal-body { padding: 20px 40px; }
 
-/* user data */
-.userdata { margin-bottom: 15px; }
-.userdata label {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 13.5pt;
-    margin-bottom: 5px;
-}
-.userdata input {
-    display: block;
-    width: 100%;
-    background: var(--white);
-    font-size: 13pt;
-    text-indent: 6px;
-    padding: 4px 0;
-    border: 1px solid var(--mauve);
-    border-radius: 4px;
-}
-.userdata input:focus { outline: none; }
-
 /* login screen - create account link */
 .loginmodal-links { margin-top: 30px; }
 .loginmodal-links a { color: rgb(29, 148, 228); }

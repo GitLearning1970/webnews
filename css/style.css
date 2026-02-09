@@ -33,3 +33,34 @@ a { text-decoration: none; }
     cursor: pointer;
     transition: background .3s ease-out;
 }
+
+/* in the middle */
+.middle {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* forms */
+.userdata { margin-bottom: 15px; }
+.userdata label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12.5pt;
+    margin-bottom: 5px;
+}
+.userdata input {
+    display: block;
+    width: 100%;
+    background: var(--white);
+    font-size: 12pt;
+    text-indent: 6px;
+    padding: 6px 0;
+    border: 1px solid var(--mauve);
+    border-radius: 4px;
+}
+.userdata input:focus { outline: none; }
+.userdata input::placeholder {
+    color: rgb(184, 184, 184);
+    font-style: italic;
+}
