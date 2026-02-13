@@ -66,3 +66,56 @@
     width: 90%;
     margin-bottom: 30px;
 }
+
+/* =================== COMMENT SECTION =================== */
+.comments { margin-top: 50px; }
+/* title */
+.comments-title {
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(29, 29, 29);
+    margin-left: 6px;
+}
+.comments-title .fa-comment {
+    font-size: 20pt;
+    margin-right: 8px;
+} 
+.comments-title-text { font-size: 20pt; }
+/* comment text */
+.comment-user {
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.comment-user .fa-user {
+    color: var(--white);
+    background: var(--mauve);
+    font-size: 18pt;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.comment-area textarea {
+    height: 80px; width: 480px;
+    display: block;
+    border: 1px solid var(--mauve);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 12.5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 59);
+    overflow: auto;
+}
+.comment-area textarea:focus { outline: none; }
+.comment-area textarea::placeholder {
+    font-style: italic;
+    color: rgb(197, 197, 197);
+}
+/* button to send a comment */
+.comment-area button {
+    margin-top: 10px;
+    background: var(--blueGreen2);
+    color: var(--white);
+}
+.comment-area button:hover { background: #44806a; }
