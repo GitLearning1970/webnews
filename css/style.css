@@ -34,249 +34,41 @@ a { text-decoration: none; }
     transition: background .3s ease-out;
 }
 
-/* ===================== HEADER ===================== */
-.header {
-    padding: 20px 10vw;
-    background: var(--blueGreen2);
-}
-.header a { color: var(--white); }
-.header a:focus { outline: none; }
-
-/* navigation bar */
-.navbar-header li {
-    display: inline-block;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 13pt;
-}
-.navbar-header li.active a,
-.navbar-header li:hover a,
-.navbar-header a:focus {
-    color: #e4e4e4;
-    outline: none;
+/* in the middle */
+.middle {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* login button */
-.navbar-header .btn {
-    background: var(--white);
-    margin-left: 40px;
-    color: var(--blueGreen2);
-}
-.navbar-header .btn:hover,
-.navbar-header .btn:focus {
-    background: #e4e4e4;
-    outline: none;
-}
-
-/* ===================== LOGIN SCREEN ===================== */
-/* background */
-.loginmodal::backdrop {
-    background: rgba(0, 0, 0, .4);
-    animation-name: backLoginAnim;
-    animation-duration: .8s;
-}
-@keyframes backLoginAnim {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-/* screen */
-.loginmodal {
-    border: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.507);
-    margin: 75px auto;
-    width: 18vw;
-    border-radius: 8px;
-    animation-name: loginAnim;
-    animation-duration: .4s;
-}
-@keyframes loginAnim {
-    from {
-        opacity: 0;
-        top: -300px;
-    }
-    to {
-        opacity: 1;
-        top: 0;
-    }
-}
-/* login header */
-.loginmodal-header {
-    background: var(--blueGreen2);
-    color: var(--white);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-}
-/* login title */
-.loginmodal-title {
-    padding: 10px 0;
-    text-align: center;
-    font-size: 30pt;
-}
-/* close button */
-.modal-close {
-    float: right;
-    background: rgb(252, 45, 45);
-    font-size: 20pt;
-    font-weight: bold;
-    padding: 0 6px;
-    border-radius: 4px;
-    margin: 4px 4px 0 0;
-    cursor: pointer;
-}
-.modal-close:hover,
-.modal-close:focus {
-    background: rgb(241, 75, 75);
-    outline: none;
-}
-
-/* login body */
-.loginmodal-body { padding: 20px 40px; }
-
-/* user data */
+/* forms */
 .userdata { margin-bottom: 15px; }
 .userdata label {
     display: inline-block;
     font-weight: bold;
-    font-size: 13.5pt;
+    font-size: 12.5pt;
     margin-bottom: 5px;
 }
 .userdata input {
     display: block;
     width: 100%;
     background: var(--white);
-    font-size: 13pt;
+    font-size: 12pt;
     text-indent: 6px;
-    padding: 4px 0;
+    padding: 6px 0;
     border: 1px solid var(--mauve);
     border-radius: 4px;
 }
 .userdata input:focus { outline: none; }
-
-/* login screen - create account link */
-.loginmodal-links { margin-top: 30px; }
-.loginmodal-links a { color: rgb(29, 148, 228); }
-.loginmodal-links a:hover,
-.loginmodal-links a:focus {
-    text-decoration: underline;
-    outline: none;
-}
-/* login screen - sign in button */
-.openlogin {
-    color: var(--white);
-    background: rgb(28, 170, 28);
-}
-.openlogin:hover,
-.openlogin:focus {
-    background: rgb(25, 150, 25);
-    outline: none;
-}
-
-/* ===================== INDEX page ===================== */
-main {
-    width: 75vw;
-    margin: 80px auto 0 auto;
-}
-
-/* labels */
-.labels {
-    width: 58%;
-    margin: 0 auto;
-    align-items: center;
-}
-/* labels options */
-.labels-opts li {
-    display: inline-block;
-    margin-right: 3px;
-}
-.labels-opts button {
-    background: var(--pink);
-    color: var(--white);
-    letter-spacing: 1px;
-}
-.labels-opts button:hover,
-.labels-opts button:focus,
-.labels-opts li.active button {
-    background: #a55d67;
-    outline: none;
-}
-/* dropdown button */
-.dropdown { position: relative; }
-.dropdown-btn {
-    background: var(--pink);
-    color: var(--white);
-    font-weight: bold;
-    font-size: 14pt;
-    rotate: 90deg;
-    border-radius: 50%;
-    padding: 0 8px 9px 8px;
-}
-.dropdown-btn:hover { background: #a55d67; }
-
-/* dropdown options */
-.dropdown-cont {
-    position: absolute;
-    background: var(--white);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.329);
-    border-radius: 4px;
-}
-.dropdown-cont li {
-    font-size: 13pt;
-    color: rgb(73, 73, 73);
-    display: block;
-    padding: 8px 20px 8px 8px;
-    cursor: pointer;
-}
-.dropdown-cont li:hover,
-.dropdown-cont li:focus,
-.dropdown-cont li.active {
-    background: rgb(240, 240, 240);
-    outline: none;
-}
-/* first and last options */
-.drop-f {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.drop-l {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-.labels button:hover { background: #a55d67; }
-
-/* cards */
-.news { margin-top: 50px; }
-.row {
-    margin-bottom: 30px;
-    column-gap: 10px;
-}
-.card {
-    width: 50%;
-    cursor: pointer;
-}
-.card-w { width: 100%; }
-.card-img {
-    width: 100%; height: 200px;
-    border: 1px solid rgb(201, 201, 201);
-    border-radius: 8px;
-    transition: .4s;
-}
-.card:hover .card-img { border-radius: 0; }
-.card-body {
-    margin-top: 6px;
-    padding: 0 4px;
-}
-/* card title */
-.card-body-title {
-    font-size: 14pt;
-    color: rgb(34, 34, 34);
-}
-.card-footer {
-    margin-top: 4px;
-    padding: 0 4px;
-    color: var(--mauve);
+.userdata input::placeholder {
+    color: rgb(184, 184, 184);
     font-style: italic;
 }
-/* card label */
-.card-footer-label { font-size: 10pt; }
-/* card posting date */
-.card-footer-date { font-size: 8.5pt; }
+
+/* user photo */
+.userphoto {
+    font-size: 18pt;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+}

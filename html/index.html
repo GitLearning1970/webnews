@@ -7,6 +7,13 @@
     <title>WebNews | Home</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
+    <link rel="stylesheet" href="../css/usermenu.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/index-page.css">
+
+    <script src="https://kit.fontawesome.com/f1ed2eab26.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header d-flex"> <!-- header -->
@@ -22,9 +29,41 @@
                 <li><a href="./contact.html">Contact</a></li> <!-- top news -->
             </ul>
 
-            <button type="button" class="btn">Login</button>
+            <!-- <button type="button" class="btn">Login</button> -->
+            <i class="fa-user fa-solid userphoto"></i>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
+
+    <div class="usermenu-back" style="display: none;"> <!-- background -->
+        <aside class="usermenu"> <!-- menu screen -->
+            <div class="usermenu-close"> <!-- close button -->
+                <span>&times;</span>
+            </div> <!-- close button /end -->
+
+            <div class="usermenu-user"> <!-- user data -->
+                <i class="fa-solid fa-user"> <!-- user photo -->
+                    <a href="/edituser.html"> <!-- edit button -->
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a> <!-- edit button /end -->
+                </i> <!-- user photo /end -->
+                <p class="usermenu-username">Joseph Nobody</p>
+            </div> <!-- user data /end -->
+
+            <nav class="usermenu-nav"> <!-- user navigation -->
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                    <li><a href="#">option 4</a></li>
+                </ul>
+
+                <button type="button" class="usermenu-logout"> <!-- logout -->
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </button> <!-- logout /end -->
+            </nav> <!-- user navigation /end -->
+        </aside> <!-- menu screen /end -->
+    </div> <!-- background /end -->
 
     <dialog class="loginmodal"> <!-- login screen -->
         <div class="loginmodal-header"> <!-- header -->
@@ -34,17 +73,17 @@
         <div class="loginmodal-body">
             <form method="post"> <!-- form -->
                 <div class="userdata"> <!-- email -->
-                    <label for="loginEmail">E-mail:</label>
-                    <input type="email" name="loginEmail" id="loginEmail">
+                    <label for="loginModalEmail">E-mail:</label>
+                    <input type="email" name="loginModalEmail" id="loginModalEmail">
                 </div> <!-- email /end -->
                 <div class="userdata"> <!-- password -->
-                    <label for="loginPass">Password:</label>
-                    <input type="password" name="loginPass" id="loginPass" minlength="8">
+                    <label for="loginModalPass">Password:</label>
+                    <input type="password" name="loginModalPass" id="loginModalPass">
                 </div> <!-- password /end -->
             </form> <!-- form /end -->
             <div class="loginmodal-links d-flex"> <!-- links -->
                 <a href="./register.html">Create an account</a>
-                <button type="button" class="btn openlogin">Sign In</button>
+                <button type="button" class="btn">Sign In</button>
             </div> <!-- links /end -->
         </div>
     </dialog> <!-- login screen /end -->
@@ -73,7 +112,8 @@
         </div> <!-- labels /end -->
     </main>
 
-    <script src="../js/login.js"></script>
+    <!-- <script src="../js/login.js"></script> -->
+    <script src="../js/usermenu.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/index-cards.js" type="module"></script>
 </body>

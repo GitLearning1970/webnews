@@ -1,0 +1,78 @@
+.header {
+    position: relative;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.mainregister {
+    height: 100%;
+    align-items: flex-start;
+}
+
+/* =================== LEFT SIDE =================== */
+.painel-img {
+    position: relative;
+    height: 100%; width: 60%;
+    background: #7a9b77;
+}
+
+.register-set {
+    text-align: center;
+    width: 40vw;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, .4);
+}
+.register-set h4 {
+    font-size: 14pt;
+    color: var(--white);
+    line-height: 20pt;
+}
+.register-set a {
+    margin-top: 20px;
+    display: block;
+    font-size: 13pt;
+    color: rgb(49, 190, 255);
+}
+.register-set a:hover { text-decoration: underline; }
+
+/* image on left */
+.register-img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =================== RIGHT SIDE =================== */
+.painel-forms {
+    position: relative;
+    height: 100%; width: 40%;
+    background: var(--mauve);
+}
+
+.datascreen-links { margin-top: 20px; }
+
+/* ---------------- screens ---------------- */
+.datascreen {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 8px 2px rgba(0, 0, 0, .35);
+}
+
+/* passwords */
+.passwords { column-gap: 12px; }
+.passwords input::placeholder { font-size: 11pt; }
+
+/* open login screen */
+.datascreen-links .link {
+    color: rgb(15, 164, 233);
+    cursor: pointer;
+    text-underline-offset: 1.5px;
+}
+.datascreen-links .link:hover { text-decoration: underline; }
+
+/* sign up and sign in buttons */
+.datascreen-links .btn {
+    background: rgb(28, 170, 28);
+    color: whitesmoke;
+}
+.datascreen-links .btn:hover { background: rgb(25, 150, 25); }

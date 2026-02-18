@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebNews | Register</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body style="height: 100%;">
+    <header class="header d-flex"> <!-- header -->
+        <div class="logo"> <!-- logo -->
+            <h1><a href="../html/index.html">WebNews</a></h1>
+        </div> <!-- logo /end -->
+
+        <nav class="navbar-header d-flex"> <!-- navigation bar -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./most-important">Most Important</a></li> <!-- main news -->
+                <li><a href="./top-news.html">Relevant</a></li> <!-- major news -->
+                <li><a href="./contact.html">Contact</a></li> <!-- top news -->
+            </ul>
+        </nav> <!-- navigation bar /end -->
+    </header> <!-- header /end -->
+
+    <main role="main" class="mainregister d-flex">
+        <section class="painel-img"> <!-- left side -->
+            <div class="register-set middle">
+                <object data="../res/news-animate.svg" class="register-img"></object>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ratione quis quidem sit! Harum, repellendus quo non velit inventore eaque. Numquam dolorem voluptate aut repudiandae. Nostrum libero molestiae quam.</h4>
+                <a href="https://storyset.com/information">Information illustrations by Storyset</a>
+            </div>
+        </section> <!-- left side /end -->
+        <section class="painel-forms"> <!-- right side -->
+            <div class="datascreen middle" style="display: block;"> <!-- register form -->
+                <form method="post">
+                    <div class="userdata"> <!-- username -->
+                        <label for="registerUsername">Username:</label>
+                        <input type="text" name="registerUsername" id="registerUsername" placeholder="It may contain letters and numbers.">
+                    </div> <!-- username /end -->
+                    <div class="userdata"> <!-- email -->
+                        <label for="registerEmail">E-mail:</label>
+                        <input type="email" name="registerEmail" id="registerEmail" placeholder="example@email.com">
+                    </div> <!-- email /end -->
+                    <div class="passwords d-flex">
+                        <div class="userdata"> <!-- password -->
+                            <label for="registerPass">Password:</label>
+                            <input type="password" name="registerPass" id="registerPass" minlength="8" placeholder="min.: 8 characters">
+                        </div> <!-- password /end -->
+                        <div class="userdata"> <!-- confirm password -->
+                            <label for="registerConfPass">Confirm password:</label>
+                            <input type="password" name="registerConfPass" id="registerConfPass" placeholder="Repeat password">
+                        </div> <!-- confirm passwor /end -->
+                    </div>
+                </form>
+                <div class="datascreen-links d-flex"> <!-- register links -->
+                    <p class="link">I have an account</p>
+                    <button type="button" class="btn">Sign up</button>
+                </div> <!-- register links /end -->
+            </div> <!-- register form /end -->
+            <div class="datascreen middle" style="display: none;"> <!-- login form -->
+                <form method="post">
+                    <div class="userdata"> <!-- email -->
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" name="loginEmail" id="loginEmail">
+                    </div> <!-- email /end -->
+                    <div class="userdata"> <!-- password -->
+                        <label for="loginPass">Password:</label>
+                        <input type="password" name="loginPass" id="loginPass">
+                    </div> <!-- password /end -->
+                </form>
+                <div class="datascreen-links d-flex"> <!-- login links -->
+                    <p class="link">Create account</p>
+                    <button type="button" class="btn">Sign in</button>
+                </div> <!-- login links /end -->
+            </div> <!-- login form /end -->
+        </section> <!-- right side /end -->
+    </main>
+
+    <script src="../js/register-page.js"></script>
+</body>
+</html>
