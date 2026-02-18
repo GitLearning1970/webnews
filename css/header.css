@@ -31,3 +31,10 @@
     background: #e4e4e4;
     outline: none;
 }
+
+/* user photo */
+.navbar-header .fa-user {
+    background: var(--white);
+    color: var(--blueGreen2);
+    margin-left: 40px;
+}

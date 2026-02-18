@@ -1,0 +1,103 @@
+/* ==================== USER MENU ==================== */
+/* background */
+.usermenu-back {
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+/* user menu */
+.usermenu {
+    position: fixed;
+    background: var(--blueGreen2);
+    width: 250px; height: 100%;
+    box-shadow: -8px 0 10px rgba(0, 0, 0, .2);
+    top: 0; right: 0;
+}
+
+/* close button */
+.usermenu-close {
+    text-align: end;
+    font-size: 28pt;
+    font-weight: bold;
+    color: #1e5e46;
+}
+.usermenu-close span {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.usermenu-close span:hover,
+.usermenu-close span:focus {
+    color: #247054;
+    outline: none;
+}
+
+/* user data */
+.usermenu-user { text-align: center; }
+.usermenu-user .fa-user,
+.usermenu-user .fa-pen-to-square {
+    border-radius: 50px;
+    background: var(--white);
+    color: var(--blueGreen2);
+}
+/* user menu - user photo */
+.usermenu-user .fa-user {
+    position: relative;
+    font-size: 35pt;
+    padding: 22px 26px;
+}
+/* user menu - edit button */
+.usermenu-user .fa-pen-to-square {
+    position: absolute;
+    font-size: 11pt;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.418);
+    padding: 6px;
+    cursor: pointer;
+    bottom: 10px; right: -6px;
+}
+.usermenu-user .fa-pen-to-square:hover { background: whitesmoke; }
+/* user menu - username */
+.usermenu-username {
+    font-size: 13.5pt;
+    font-weight: bold;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+/* user menu options*/
+.usermenu-nav { margin-top: 40px; }
+.usermenu-nav ul {
+    margin-bottom: 30px;
+    font-size: 14pt;
+}
+.usermenu-nav li {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+.usermenu-nav a {
+    color: var(--white);
+}
+.usermenu-nav a:hover { color: #e6e6e1; }
+
+/* user menu logout button*/
+.usermenu-logout {
+    display: block;
+    width: 90%;
+    text-align: start;
+    font-size: 15pt;
+    padding: 6px 0 6px 10px;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+.usermenu-logout:hover { background: rgba(255, 255, 252, 0.24); }
+.usermenu-logout .fa-arrow-right-from-bracket { transition: margin-right .2s ease-out; }
+.usermenu-logout:hover .fa-arrow-right-from-bracket { margin-right: 4px; }
