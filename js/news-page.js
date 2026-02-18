@@ -1,3 +1,19 @@
+import genCard from "./generate-cards.js"
+
+const aside = document.querySelector('.asidenews')
+const asideNews = document.createElement('div')
+asideNews.classList.add('asidenews-cards')
+
+// defining amount of cards
+const cardsAmount = 6
+// generate card news
+const card = genCard(cardsAmount)
+
+// append cards to the side of the page
+card.forEach(cd => asideNews.appendChild(cd))
+aside.appendChild(asideNews)
+
+// ======== ADD COMMENTS ========
 const commentsDiv = document.createElement('div')
 commentsDiv.classList.add('comment-section')
 const commentSec = document.querySelector('.comments')
@@ -63,6 +79,12 @@ const generateComment = function(text) {
     return commentUser
 }
 
+const commentTitle = document.querySelector('.comments-title-text')
+let count = commentsDiv.childElementCount
+const commentCount = document.createElement('span')
+commentCount.textContent = ` (${count})`
+commentTitle.appendChild(commentCount)
+
 btn.addEventListener('click', () => {
     const commentInp = document.querySelector('.comment-area textarea')
 
@@ -71,6 +93,9 @@ btn.addEventListener('click', () => {
         const user = generateComment(commentInp.value)
         commentsDiv.appendChild(user)
     }
+
+    count = commentsDiv.childElementCount
+    commentCount.textContent = ` (${count})`
 
     commentInp.value = ''
 })
