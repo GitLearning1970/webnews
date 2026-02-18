@@ -64,3 +64,11 @@ a { text-decoration: none; }
     color: rgb(184, 184, 184);
     font-style: italic;
 }
+
+/* user photo */
+.userphoto {
+    font-size: 18pt;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+}
