@@ -6,14 +6,27 @@
     position: fixed;
     background: rgba(0, 0, 0, .4);
     z-index: 1;
+    animation-name: backAnim;
+    animation-duration: .4s;
+}
+@keyframes backAnim {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 /* user menu */
 .usermenu {
     position: fixed;
     background: var(--blueGreen2);
-    width: 250px; height: 100%;
+    width: 0; height: 100%;
     box-shadow: -8px 0 10px rgba(0, 0, 0, .2);
     top: 0; right: 0;
+    white-space: nowrap;
+    animation-name: usermenuAnim;
+    animation-duration: .4s;
+}
+@keyframes usermenuAnim {
+    from { width: 0; }
+    to { width: 250px; }
 }
 
 /* close button */
