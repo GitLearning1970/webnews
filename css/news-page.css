@@ -66,3 +66,96 @@
     width: 90%;
     margin-bottom: 30px;
 }
+
+/* =================== COMMENT SECTION =================== */
+.comments { margin-top: 50px; }
+/* title */
+.comments-title {
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(29, 29, 29);
+    margin-left: 6px;
+}
+.comments-title .fa-comment {
+    font-size: 20pt;
+    margin-right: 8px;
+} 
+.comments-title-text { font-size: 20pt; }
+/* comment text */
+.comment-input {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+    column-gap: 10px;
+}
+.userphoto {
+    color: var(--white);
+    background: var(--mauve);
+}
+.comment-area textarea {
+    height: 80px; width: 400px;
+    display: block;
+    border: 1px solid var(--mauve);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 12.5pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 59);
+    overflow: auto;
+}
+.comment-area textarea:focus { outline: none; }
+.comment-area textarea::placeholder {
+    font-style: italic;
+    color: rgb(197, 197, 197);
+}
+/* button to send a comment */
+.comment-area .btn {
+    margin-top: 10px;
+    background: var(--blueGreen2);
+    color: var(--white);
+}
+.comment-area .btn:hover { background: #44806a; }
+
+/* comments */
+.comment-section { margin-top: 60px; }
+
+.comment-user {
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 10px;
+    margin-bottom: 40px;
+    width: 700px;
+}
+
+.comment-userinfo p {
+    margin-top: 10px;
+    font-size: 12.5pt;
+}
+/* "answer" button */
+.comment-user .btn {
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 10.5pt;
+    border-radius: 50px;
+    background: var(--blueGreen2);
+    color: var(--white);
+}
+.comment-user .btn:hover,
+.comment-user .btn:focus {
+    background: #44806a;
+    outline: none;
+}
+/* user informations */
+.userinfo {
+    column-gap: 10px;
+    justify-content: flex-start;
+}
+.userinfo-name {
+    font-weight: bold;
+    font-size: 12pt;
+}
+.userinfo-time {
+    font-size: 9pt;
+    color: var(--mauve);
+    font-style: italic;
+}
