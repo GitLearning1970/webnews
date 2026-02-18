@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/register-page.css">
+
+    <script src="https://kit.fontawesome.com/f1ed2eab26.js" crossorigin="anonymous"></script>
 </head>
 <body style="height: 100%;">
     <header class="header d-flex"> <!-- header -->
@@ -30,13 +32,20 @@
         <section class="painel-img"> <!-- left side -->
             <div class="register-set middle">
                 <object data="../res/news-animate.svg" class="register-img"></object>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ratione quis quidem sit! Harum, repellendus quo non velit inventore eaque. Numquam dolorem voluptate aut repudiandae. Nostrum libero molestiae quam.</h4>
                 <a href="https://storyset.com/information">Information illustrations by Storyset</a>
             </div>
         </section> <!-- left side /end -->
         <section class="painel-forms"> <!-- right side -->
             <div class="datascreen middle" style="display: block;"> <!-- register form -->
-                <form method="post">
+                <form method="post" action="/api">
+                    <div class="userdata registerphoto"> <!-- user photo -->
+                        <p class="registerphoto-text">Select a image</p>
+                        <label for="photo">
+                            <i class="fa-solid fa-camera" for="photo"></i>
+                        </label>
+                        <input type="file" id="photo" accept=".png,.jpg,.jpeg"
+                        style="display: none;">
+                    </div> <!-- user photo /end -->
                     <div class="userdata"> <!-- username -->
                         <label for="registerUsername">Username:</label>
                         <input type="text" name="registerUsername" id="registerUsername" placeholder="It may contain letters and numbers.">
@@ -55,14 +64,14 @@
                             <input type="password" name="registerConfPass" id="registerConfPass" placeholder="Repeat password">
                         </div> <!-- confirm passwor /end -->
                     </div>
+                    <div class="datascreen-links d-flex"> <!-- register links -->
+                        <p class="link">I have an account</p>
+                        <input type="submit" value="Sign up" class="btn">
+                    </div> <!-- register links /end -->
                 </form>
-                <div class="datascreen-links d-flex"> <!-- register links -->
-                    <p class="link">I have an account</p>
-                    <button type="button" class="btn">Sign up</button>
-                </div> <!-- register links /end -->
             </div> <!-- register form /end -->
             <div class="datascreen middle" style="display: none;"> <!-- login form -->
-                <form method="post">
+                <form method="post" action="/api">
                     <div class="userdata"> <!-- email -->
                         <label for="loginEmail">E-mail:</label>
                         <input type="email" name="loginEmail" id="loginEmail">
@@ -71,11 +80,11 @@
                         <label for="loginPass">Password:</label>
                         <input type="password" name="loginPass" id="loginPass">
                     </div> <!-- password /end -->
+                    <div class="datascreen-links d-flex"> <!-- login links -->
+                        <p class="link">Create account</p>
+                        <input type="submit" value="Sign in" class="btn">
+                    </div> <!-- login links /end -->
                 </form>
-                <div class="datascreen-links d-flex"> <!-- login links -->
-                    <p class="link">Create account</p>
-                    <button type="button" class="btn">Sign in</button>
-                </div> <!-- login links /end -->
             </div> <!-- login form /end -->
         </section> <!-- right side /end -->
     </main>

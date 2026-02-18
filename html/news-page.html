@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/usermenu.css">
-    <!-- <link rel="stylesheet" href="../css/login.css"> -->
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/cards.css">
     <link rel="stylesheet" href="../css/news-page.css">
     
@@ -71,7 +71,7 @@
             <h2 class="loginmodal-title">LOGIN</h2>
         </div> <!-- header /end -->
         <div class="loginmodal-body">
-            <form method="post"> <!-- form -->
+            <form method="post" action="/api"> <!-- form -->
                 <div class="userdata"> <!-- email -->
                     <label for="loginEmail">E-mail:</label>
                     <input type="email" name="loginEmail" id="loginEmail">
@@ -80,11 +80,11 @@
                     <label for="loginPass">Password:</label>
                     <input type="password" name="loginPass" id="loginPass" minlength="8">
                 </div> <!-- password /end -->
+                <div class="loginmodal-links d-flex"> <!-- links -->
+                    <a href="./register.html">Create an account</a>
+                    <input type="submit" value="Sign in" class="btn">
+                </div> <!-- links /end -->
             </form> <!-- form /end -->
-            <div class="loginmodal-links d-flex"> <!-- links -->
-                <a href="./register.html">Create an account</a>
-                <button type="button" class="btn">Sign In</button>
-            </div> <!-- links /end -->
         </div>
     </dialog> <!-- login screen /end -->
 
