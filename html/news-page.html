@@ -8,10 +8,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/usermenu.css">
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
     <link rel="stylesheet" href="../css/cards.css">
     <link rel="stylesheet" href="../css/news-page.css">
-
+    
     <script src="https://kit.fontawesome.com/f1ed2eab26.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,9 +29,41 @@
                 <li><a href="./contact.html">Contact</a></li> <!-- top news -->
             </ul>
 
-            <button type="button" class="btn">Login</button>
+            <!-- <button type="button" class="btn">Login</button> -->
+            <i class="fa-user fa-solid userphoto"></i>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
+
+    <div class="usermenu-back" style="display: none;"> <!-- background -->
+        <aside class="usermenu"> <!-- menu screen -->
+            <div class="usermenu-close"> <!-- close button -->
+                <span>&times;</span>
+            </div> <!-- close button /end -->
+
+            <div class="usermenu-user"> <!-- user data -->
+                <i class="fa-solid fa-user"> <!-- user photo -->
+                    <a href="/edituser.html"> <!-- edit button -->
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a> <!-- edit button /end -->
+                </i> <!-- user photo /end -->
+                <p class="usermenu-username">Joseph Nobody</p>
+            </div> <!-- user data /end -->
+
+            <nav class="usermenu-nav"> <!-- user navigation -->
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                    <li><a href="#">option 4</a></li>
+                </ul>
+
+                <button type="button" class="usermenu-logout"> <!-- logout -->
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>logout</span>
+                </button> <!-- logout /end -->
+            </nav> <!-- user navigation /end -->
+        </aside> <!-- menu screen /end -->
+    </div> <!-- background /end -->
 
     <dialog class="loginmodal"> <!-- login screen -->
         <div class="loginmodal-header"> <!-- header -->
@@ -126,7 +159,8 @@
         </aside> <!-- aside news /end -->
     </main>
 
-    <script src="../js/login.js"></script>
+    <!-- <script src="../js/login.js"></script> -->
+     <script src="../js/usermenu.js"></script>
     <script src="../js/newspage-cards.js" type="module"></script>
     <script src="../js/addComment.js"></script>
 </body>
